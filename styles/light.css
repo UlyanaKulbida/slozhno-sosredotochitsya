@@ -1,79 +1,39 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-/* :root .theme-light {
+/* *******   BODY LIGHT THEME  --variables-  ******* */
 
-} */
-
-@media (prefers-color-scheme: light) {
-  :root {
-    /* Дублируем переменные светлой темы */
-    --bg-color-light: #fff1f7;
-    --bg-color-accent-light: #ff8dcb;
-    --main-text-color-light: #353430;
-    --accent-text-color-light: #ffc2e6;
-    --dark-selection-light: #ff0070;
-    --bg-color-accent-hover-light: rgb(53, 52, 4, 0.4);
-  }
-}
-
-.page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
-
+ :root .theme_light {  
   --bg-color: #fff1f7;
-  --bg-color-accent: #ff8dcb;
-  --main-text-color: #353430;
+  --bg-color-accent: #353430;
+  --bg-color-accent-decor: #FF8DCB;
+  --color-accent-shadow: var(--bg-color-accent-decor);
+  --color-accent-link-shadow: var(--bg-color-accent-decor);  
+  --color-accent-h2: var(--bg-color-accent);
+  --color-h2: var(--bg-color-accent);
+  --main-text-color: var(--bg-color-accent);
   --accent-text-color: #ffc2e6;
-  --dark-selection: #ff0070;
   --bg-color-accent-hover: rgb(53, 52, 4, 0.4);
-
-  background: url(../images/cover-image-light.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-}
+  --background-image-fixed: url(../images/cover-image-light.png)
+} 
 
 .theme_light .decor-item {
   visibility: hidden;
 }
 
-.theme_light .header::after,
-.theme_light .footer__title::after {
-  --bg-color-accent: var(--main-text-color);
-  border-top: 1px solid var(--bg-color-accent);
-  border-right: 1px solid var(--bg-color-accent);
-}
+@media (prefers-color-scheme: light) {
+  :root .theme_auto {
+    --bg-color: #fff1f7;
+    --bg-color-accent: #353430;
+    --bg-color-accent-decor: #FF8DCB;
+    --color-accent-shadow: var(--bg-color-accent-decor);
+    --color-accent-link-shadow: var(--bg-color-accent-decor);  
+    --color-accent-h2: var(--bg-color-accent);
+    --color-h2: var(--bg-color-accent);
+    --main-text-color: var(--bg-color-accent);
+    --accent-text-color: #ffc2e6;
+    --bg-color-accent-hover: rgb(53, 52, 4, 0.4);
+    --background-image-fixed: url(../images/cover-image-light.png); 
+  }
 
-.theme_light .header::before,
-.theme_light .footer__title::before {
-  --bg-color-accent: var(--main-text-color);
-  border-left: 1px solid var(--bg-color-accent);
-  border-bottom: 1px solid var(--bg-color-accent);
-}
-
-.theme_light button {
-  --bg-color-accent: var(--main-text-color);
-  color: var(--bg-color-accent);
-}
-
-.theme_light .main__title-content,
-.theme_light .main-content {
-  --bg-color-accent: var(--main-text-color);
-  color: var(--bg-color-accent);
-}
-
-.theme_light .title-decor {
-  --bg-color: var(--main-text-color);
-  color: var(--bg-color);
-}
-
-.theme_light .link_text {
-  --bg-color-accent: var(--dark-selection);
-  text-shadow: 1px 1px 0 var(--bg-color-accent);
+  .theme_auto .decor-item {
+    visibility: hidden;
+  }
 }
