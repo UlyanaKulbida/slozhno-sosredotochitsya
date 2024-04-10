@@ -1,6 +1,6 @@
 /* *******   BODY LIGHT THEME  --variables-  ******* */
 
- :root .theme_light {  
+.page.theme_light {  
   --bg-color: #fff1f7;
   --bg-color-accent: #353430;
   --bg-color-accent-decor: #FF8DCB;
@@ -11,15 +11,16 @@
   --main-text-color: var(--bg-color-accent);
   --accent-text-color: #ffc2e6;
   --bg-color-accent-hover: rgb(53, 52, 4, 0.4);
-  --background-image-fixed: url(../images/cover-image-light.png)
+  --background-image-fixed: url(../images/cover-image-light.png);
+  --decor-item-visible: hidden;
 } 
 
-.theme_light .decor-item {
+/* .theme_light .decor-item {
   visibility: hidden;
-}
+} */
 
 @media (prefers-color-scheme: light) {
-  :root .theme_auto {
+  :root  {
     --bg-color: #fff1f7;
     --bg-color-accent: #353430;
     --bg-color-accent-decor: #FF8DCB;
@@ -30,10 +31,11 @@
     --main-text-color: var(--bg-color-accent);
     --accent-text-color: #ffc2e6;
     --bg-color-accent-hover: rgb(53, 52, 4, 0.4);
-    --background-image-fixed: url(../images/cover-image-light.png); 
+    --background-image-fixed: url(../images/cover-image-light.png);
+    --decor-item-visible: hidden;
   }
 
-  .theme_auto .decor-item {
+  /* .decor-item {
     visibility: hidden;
-  }
+  } */
 }

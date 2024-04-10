@@ -1,6 +1,7 @@
 /* *******   BODY DARK THEME  --variables-  ******* */
 
-:root .theme-dark {
+
+.page.theme_dark {
   --bg-color: #000028;
   --bg-color-accent: #ff0070;
   --color-accent-shadow:#ff0070;
@@ -13,8 +14,9 @@
   --dark-selection: #353430;
   --bg-color-accent-hover: rgb(255, 0, 112, 0.4);
   --background-image-fixed: url(../images/cover-image-dark.png);
+  --decor-item-visible: visible;
 }
 
-.theme_dark .decor-item {
+/* .theme_dark .decor-item {
   visibility: visible;
-} 
+}  */
