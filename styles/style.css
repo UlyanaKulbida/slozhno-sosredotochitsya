@@ -132,22 +132,22 @@ button:active {
   outline: transparent;
 }
 
-a:focus-visible {
+a:hover {
   outline: transparent;
   border-block-end: 1px solid var(--main-text-color);
 }
 
-button:focus-visible {
+button:hover {
   border-block-end: transparent;
   outline: 1px solid var(--bg-color-accent-hover);
 }
 
-a:hover {
+a:focus-visible {
   border-block-end: transparent;
   outline: 1px solid var(--main-text-color);
 }
 
-button:hover {
+button:focus-visible {
   outline: transparent;
   border-block-end: 1px solid var(--bg-color-accent);
 }

@@ -15,10 +15,6 @@
   --decor-item-visible: hidden;
 } 
 
-/* .theme_light .decor-item {
-  visibility: hidden;
-} */
-
 @media (prefers-color-scheme: light) {
   :root  {
     --bg-color: #fff1f7;
@@ -34,8 +30,4 @@
     --background-image-fixed: url(../images/cover-image-light.png);
     --decor-item-visible: hidden;
   }
-
-  /* .decor-item {
-    visibility: hidden;
-  } */
 }
